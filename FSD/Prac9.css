@@ -1,0 +1,13 @@
+.c1{
+    font-weight:bold;
+    text-indent:3cm;
+}
+h1{
+    font-style: normal;
+    font-size:120%;
+}
+body{
+    background-color:orange;
+    background-image:url("nature.jpeg");
+    background-repeat: repeat-x;
+}

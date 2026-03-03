@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function show(id){
+ let all=document.getElementsByClassName("ans");
+ for(let i=0;i<all.length;i++){
+   all[i].style.display="none";
+ }
+ document.getElementById(id).style.display="block";
+}
+</script>
+</head>
+
+<body>
+
+<h3 onclick="show('a1')">Q1</h3>
+<p id="a1" class="ans" style="display:none">Answer 1</p>
+
+<h3 onclick="show('a2')">Q2</h3>
+<p id="a2" class="ans" style="display:none">Answer 2</p>
+
+<h3 onclick="show('a3')">Q3</h3>
+<p id="a3" class="ans" style="display:none">Answer 3</p>
+
+</body>
+</html>

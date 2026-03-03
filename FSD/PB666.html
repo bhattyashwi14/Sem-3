@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>
+            Username
+            <input type="text" id="u1" required>
+        </label>
+        <label>
+            Passcode
+            <input type="password" id="p1" required>
+        </label>
+        <input type="button" value="Submit" onclick="fun()">
+    </form>
+    <h3 id="msg"></h3>
+    <script>
+        pat1=/^[A-Za-z_]{6,}$/;
+        pat2=/[#_*]/;
+        pat3=/[0-9]/;
+        function fun()
+        {
+            x=document.getElementById("u1").value;
+            y=document.getElementById("p1").value;
+            z=document.getElementById("msg");
+            if(x.length==0 || y.length==0)
+            {
+                alert("Username or passcode shall not be empty");
+            }
+            else if(!pat1.test(x))
+            {
+                if(x.length<6)
+                {
+                    alert("Minimum length of username shall be 6");
+                }
+                else
+                {
+                    alert("Username should not have digits and any special character other than _");
+                }
+            }
+            else if(y.length<8 || y.length>12)
+            {
+                alert("Passcode must be between length of 8 to 12");
+            }
+            else if(!pat2.test(y))
+            {
+                alert("Passcode must have 1 special character");
+            }
+            else if(!pat3.test(y))
+            {
+                alert("Passcode must have 1 digit");
+            }
+            else
+            {
+                alert("Logged in successfully");
+                z.innerHTML=`Welcome ${x}`;
+            }
+        }
+    </script>
+</body>
+</html>

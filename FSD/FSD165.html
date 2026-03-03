@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PB 165</title>
+</head>
+<body>
+	<form action="#" methid="get" enctype="multipart/form.data">
+		<fieldset>
+			<legend align="center">SignUp</legend>
+				<label for="uname">Username</label>
+					<input type="text" id="uname" placeholder="Enter User Name" maxlength="20" required/>
+				<br>
+				<label>Passcode</label>
+					<input type="password" minlength="8" maxlength="20" required/>
+				<br>
+				<label>Gender</label>
+					<input type="radio" name="gender" value="male"/>Male
+					<input type="radio" name="gender" value="female" checked/>Female
+				<br>
+				<label>Area of Interest</label>
+					<input type="checkbox" name="Area of Interest" value="DS" checked/>DS
+					<input type="checkbox" named="Area of Interest" value="DBMS"/>DBMS
+					<input type="checkbox" named="Area of Interest" value="CN"/>CN
+					<input type="checkbox" named="Area of Interest" value="Full Stack"/>Full Stack
+				<br>
+				<label>Department</label>
+					<select name="Select Department" required>
+						<option value="Select Department">---Select Department---</option>
+						<option value="CSE">CSE</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="Psychology">Psychology</option>
+					</select>
+				<br>
+				<label>Address</label>
+					<textarea name="Address" rows="5" cols="10" required>Hello</textarea>
+				<br>
+				<label>Upload CV</label>
+					<input type="file" name="CV" accept=".pdf,.doc" multiple required/>
+				<br>
+				<label>Date</label>
+					<input type="date" name="Date" min="2000-01-01" max="20225-12-31" required/>
+				<br>
+				<label>Email</label>
+					<input type="email" required/>
+				<br>
+				<input type="button" value="Click me"/>
+				<input type="reset" value="Reset"/>
+				<input type="submit" value="Submit"/>
+		</fieldset>
+	</form>
+</body>
+</html>

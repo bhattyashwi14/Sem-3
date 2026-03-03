@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PB194</title>
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form.data">
+		<fieldset>
+			<legend>Bank Login Form</legend>
+			<label>Account Number:</label>
+				<input type="text" placeholder="Enter your Account Number" required/>
+			<br>
+			<label>IFSC Code:</label>
+				<input type="text" placeholder="Enter IFSC Code" required/>
+			<br>
+			<label>PIN:</label>
+				<input type="password" placeholder="Enter your PIN" minlength="8" maxlength="20" required/>
+			<br>
+			<label>Confirm PIN</label>
+				<input type="password" placeholder="Re-enter your PIN" minlength="8" maxlength="20"required/>
+			<br>
+			<label>Phone Number::</label>
+				<input type="tel" placeholder="Enter your Phone Number" required/>
+			<br>
+			<label>Select Branch Location:</label>
+				<select name="Select Branch Location" required>
+					<option value="Choose a branch">Choose a Branch</option>
+					<optgroup label="India">
+						<option value="Gandhinagar">Gandhinagar</option>
+						<option value="Ahmedabad">Ahemdabad</option>
+					</optgroup>
+					<optgroup label="USA">
+						<option value="NYC">New York City</option>
+						<option value="Seatle">Seatle</option>
+					</optgroup>
+				</select>
+			<br>
+			<label>Date of Birth:</label>
+				<input type="date" min="2000-01-01" max="2025-12-31" required/>
+			<br>
+			<label>Account type:</label>
+			<br>
+				<input type="radio" name="account type" value="Savings" checked/>Savings
+				<input type="radio" name="account type" value="Checking"/>Checking
+				<input type="radio" name="account type" value="Business"/>Business
+			<br>
+			<input type="checkbox" value="I agree to the terms and conditions"required/>I agree to the terms and conditions
+			<br>
+			<label>Additional Information:</label>
+				<textarea name="additional information" rows="5" cols="15" placeholder="Enter your Additional Information"></textarea>
+			<br>
+			<label>Upload Proof of ID:</label>
+				<input type="file" name="proof of ID" accept=".jpeg,.png,.pdf" multiple required/>
+			<br>
+			<input type="submit" value="Submit"/>
+			<input type="reset" value="Reset"/>
+			<br>
+			<input type="checkbox" value="Subscribe to our newsletter"/>Subscribe to our newsletter
+		</fieldset>
+	</form>
+</body>
+</html>

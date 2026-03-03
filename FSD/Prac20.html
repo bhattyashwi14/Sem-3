@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(event)
+        {
+            document.getElementById("code").innerHTML="Key code:"+event.key;
+            let key=event.key.toLowerCase();
+            if (key==="a" || key==="e" || key==="i" ||  key==="o" ||  key==="u")
+            {
+                document.getElementById("msg").innerHTML="Vowel is pressed";
+            }
+        }
+
+        function fun1()
+        {
+            document.body.style.backgroundColor="blue";
+        }
+    </script>
+    <form>
+        <label>Enter key
+            <input type="text" required onkeydown="fun(event)" onkeyup="fun1()">
+        </label>
+    </form>
+    <p id="code"></p>
+    <p id="msg"></p>
+</body>
+</html>

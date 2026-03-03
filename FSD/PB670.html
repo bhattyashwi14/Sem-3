@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("Product","Laptop");
+        localStorage.setItem("Price",50000);
+        localStorage.setItem("Discount",10);
+
+        console.log(localStorage.getItem("Product"));
+        console.log(localStorage.getItem("Price"));
+        console.log(localStorage.getItem("Discount"));
+
+        localStorage.removeItem("Discount")
+
+        console.log(localStorage.getItem("Product"));
+        console.log(localStorage.getItem("Price"));
+        console.log(localStorage.getItem("Discount"));
+    </script>
+</body>
+</html>

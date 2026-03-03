@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onclick="fun()">Heyooooo</h1>
+    <button onclick="red()">Red</button>
+    <button onclick="blue()">blue</button>
+    <script>
+        function fun()
+        {
+            document.getElementById("h1").innerHTML="Hello World";
+            document.getElementById("h1").style.fontStyle="italic";
+            document.getElementById("h1").style.fontSize="50px";
+        }
+
+        function red()
+        {
+            document.getElementById("h1").style.color="red";
+        }
+
+        function blue()
+        {
+            document.getElementById("h1").style.color="blue";
+        }
+    </script>
+</body>
+</html>

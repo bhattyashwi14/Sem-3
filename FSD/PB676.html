@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Dog Images</h1>
+    <button id="btn" onclick="fun()">Get Cute dog pics</button>
+    <img id="i1" width="500">
+    <p id="msg"></p>
+    <script>
+        function fun()
+        {
+            fetch("https://dog.ceo/api/breeds/image/random")
+            .then(response=>response.json())
+            .then(data=>{document.getElementById("i1").setAttribute("src",data.message); 
+            document.getElementById("msg").innerText=data.status;})
+            .catch(error=>{document.getElementById("msg").innerText=error.message;})
+        }
+    </script>
+</body>
+</html>

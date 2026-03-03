@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="n1">
+<select id="op">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+<input id="n2">
+
+<button onclick="calc()">Calc</button>
+
+<div id="res"></div>
+
+<script>
+function calc(){
+ let a=Number(n1.value);
+ let b=Number(n2.value);
+ let op=op.value;
+
+ new Promise((resolve,reject)=>{
+   if(isNaN(a)||isNaN(b)|| (op=="/" && b==0))
+      reject("Invalid");
+   else{
+     if(op=="+") resolve(a+b);
+     if(op=="-") resolve(a-b);
+     if(op=="*") resolve(a*b);
+     if(op=="/") resolve(a/b);
+   }
+ })
+ .then(r=>res.innerHTML=r)
+ .catch(e=>res.innerHTML=e)
+ .finally(()=>console.log("Done"));
+}
+</script>
+
+</body>
+</html>

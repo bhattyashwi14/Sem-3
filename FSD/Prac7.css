@@ -1,0 +1,13 @@
+p::first-line{
+    color:green;
+    font-style:italic;
+}
+
+h2::selection{
+    background-color:grey;
+}
+
+ol{
+    color:green;
+    font-size:30px;
+}

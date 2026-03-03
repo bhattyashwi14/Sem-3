@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="description">Item 1</p>
+    <p class="description">Item 2</p>
+    <p class="description">Item 3</p>
+    <button onclick="fun()">Change</button>
+    <script>
+        function fun()
+        {
+            let x=document.getElementsByClassName("description");
+            for(let i=0;i<x.length;i++)
+            {
+                x[i].innerHTML="<strong>Updated!</strong>";
+                x[i].setAttribute("title","This item has been updated.");
+            }     
+        }
+    </script>
+</body>
+</html>

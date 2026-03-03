@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>PB409</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+</head>
+<body>
+	<div class="accordion" id="PB409">
+
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+			<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">
+				Topic 1
+			</button>
+			</h2>
+			<div id="one" data-bs-parent="#PB409" class="collapse accordion-collapse">
+				<div class="accordion-body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sit vel nam blanditiis praesentium iusto laboriosam. Iste veniam quibusdam dicta at, iure inventore fuga neque eum deserunt id autem architecto!
+				</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+			<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#two">Topic 2</button>
+			</h2>
+			<div id="two" class="collapse accordion-collapse" data-bs-parent="#PB409">
+				<div class="accordion-body">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, eius! Nostrum temporibus numquam est quam unde. Quia ab earum vel repudiandae ducimus beatae obcaecati sunt, nesciunt, ipsum commodi, unde expedita.
+				</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#three">
+					Topic 3
+				</button>
+			</h2>
+			<div class="collapse accordion-collapse" id="three" data-bs-parent="#PB409">
+				<div class="accordion-body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus, debitis sunt sit ab iure qui explicabo. Neque voluptates magnam repellat praesentium enim? Accusantium non distinctio amet ab error perferendis?
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+</body>

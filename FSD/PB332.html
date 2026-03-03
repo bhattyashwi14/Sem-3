@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PB332</title>
+	<style>
+		:root{
+			--h:20%;
+			--w:100%;
+			--border_px:5px;
+			--border_color:red;
+			--title_color:red;
+			--indext:2cm;
+			--text_trans:capitalize;
+		}
+		section{
+			height:var(--h);
+			width:var(--w);
+		}
+		.Container:hover{
+			border:var(--border_px) dotted var(--border_color);
+		}
+		.Container h2:hover{
+			color:var(--title_color);
+		}
+		.Container p:hover{
+			text-indent:var(--indext);
+			text-transform:var(--text_trans);
+		}
+	</style>
+</head>
+<body>
+	<section class="Container">
+		<h2>Section 1</h2>
+		<p>heyoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo. 
+		This is paragraph in section 1.</p>
+	</section>
+	<section class="Container">
+		<h2>Section 2</h2>
+		<p>heyoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo. 
+		This is paragraph in section 2.</p>
+	</section>
+	<section class="Container">
+		<h2>Section 3</h2>
+		<p>heyoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo. 
+		This is paragraph in section 3</p>
+	</section>
+</body>
+</html>

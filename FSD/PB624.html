@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="fun1()">PB 624</h1>
+    <button onclick="fun2()">Red</button>
+    <button onclick="fun3()">Blue</button>
+
+    <script>
+        x=document.querySelectorAll("h1")[0];
+        function fun1()
+        {
+            x.innerText="Hello World";
+            x.style.fontStyle="italic";
+            x.style.fontSize="50px";
+        }
+        function fun2()
+        {
+            x.style.color="red";
+        }
+        function fun3()
+        {
+            x.style.color="blue";
+        }
+    </script>
+</body>
+</html>

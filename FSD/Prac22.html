@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Practice Question 22</h1>
+
+    <p class="para" id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae nam dolores, nesciunt labore provident eligendi saepe odit sed dolor debitis consequatur tenetur at? Aliquam, facere aspernatur repudiandae vero odio unde?
+    Reiciendis libero nisi ea quasi, voluptas officiis tenetur! Provident, dignissimos aliquam. Quam soluta vero officia eum unde nesciunt labore sed laboriosam? Nisi ad, libero velit nemo rerum nostrum quisquam rem!
+    Soluta cum suscipit sequi. Libero similique error labore. Culpa tenetur recusandae, accusantium sequi et, tempora mollitia incidunt dolorem, vitae nemo obcaecati alias possimus. Tenetur dignissimos incidunt iste eveniet voluptatibus. Dicta!
+    Quibusdam voluptatibus soluta aliquid? Ullam provident illo quo at quidem accusantium repellendus. Ea accusamus excepturi possimus earum natus delectus minus, a sint illum adipisci error quam voluptate itaque necessitatibus nostrum.
+    Voluptatum nam, totam eveniet harum aliquid molestias, necessitatibus sequi accusamus doloremque sed, magnam perspiciatis placeat debitis odio nulla illum! Fugiat mollitia vel itaque non deserunt quibusdam, quam consectetur sint commodi!
+    </p>
+
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam quidem, vel assumenda esse architecto facere eum sapiente tenetur saepe non exercitationem quaerat at placeat debitis consequuntur officiis, voluptate laborum.
+        Modi autem, maiores ex, cum cupiditate consequatur suscipit maxime voluptatem eligendi harum aliquam eveniet. Magnam deleniti ducimus a aliquid alias illum cumque! Temporibus tempore unde excepturi voluptatem id, enim et.
+        Cum id accusamus tenetur quibusdam excepturi distinctio quo rem quasi, eveniet atque doloribus? Quisquam quos, architecto quaerat numquam quis soluta impedit. Quis a labore, repudiandae voluptates adipisci eveniet quasi tempore.
+        Architecto illum quo nisi, odio harum dolore. Rerum porro qui doloremque facilis nostrum ab distinctio amet quas excepturi libero. Vitae et unde rerum excepturi pariatur perspiciatis numquam sequi a magnam.
+        Nihil aliquam veniam asperiores debitis natus esse optio praesentium dolorum quidem? Rem esse rerum maiores hic aliquid sint placeat ipsam at porro sapiente! Sequi, reprehenderit in dolores iure veniam omnis.
+    </p>
+
+    <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <button onclick="fun()">Let's see the change</button>
+
+    <script>
+        function fun()
+        {
+            document.getElementById("h1").innerHTML=("Change successful");
+            let p=document.getElementsByClassName("para");
+            for(let i=0;i<p.length;i++)
+            {
+                p[i].style.color="red";
+            }
+            document.getElementById("p1").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

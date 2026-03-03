@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="theme-toggle">Enable Dark Mode</button>
+    <div class="content-light-mode"> 
+        <h1>My Awesome Page</h1> 
+        <p>This is some content to demonstrate the toggle.</p>
+    </div>
+    <script>
+        x=document.getElementById("theme-toggle");
+        y=document.getElementsByClassName("content-light-mode")[0];
+        y.style.backgroundColor="white";
+        y.style.color="black";
+        function fun()
+        {
+            if(y.style.backgroundColor==="white")
+            {
+                x.innerText="Enable Light mode";
+                y.style.backgroundColor="#333";
+                y.style.color="white";
+                
+            }
+            else
+            {
+               x.innerText="Enable Dark mode";
+               y.style.backgroundColor="white";
+                y.style.color="black";
+            }
+        }
+        x.addEventListener("click",fun);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form onsubmit="return validate()">
+
+Username <input id="u"><br>
+Password <input type="password" id="p"><br>
+
+<button>Login</button>
+
+</form>
+
+<script>
+function validate(){
+
+ let u=document.getElementById("u").value;
+ let p=document.getElementById("p").value;
+
+ if(u==""||p==""){
+   alert("Cannot be blank");
+   return false;
+ }
+
+ if(/^[_@0-9]/.test(u)){
+   alert("Invalid username start");
+   return false;
+ }
+
+ if(p.length<6 || p.length>12){
+   alert("Password length 6-12");
+   return false;
+ }
+
+ return true;
+}
+</script>
+
+</body>
+</html>

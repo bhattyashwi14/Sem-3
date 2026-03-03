@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PB279</title>
+	<style>
+		form{
+			border:10px solid black;
+			background-color:teal
+		}
+		input[type=text]:hover{
+			background-color:yellow;
+		}
+		input[type=password]:hover{
+			background-color:pink;
+		}
+		input[type=radio]:checked + label,input[type=checkbox]:checked + label{
+			color:red;
+		}
+		input[type=submit]:hover,input[type=reset]{
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<form>
+			<legend align="center">Sign-Up Form</legend>
+			<label>Username:</label>
+				<input type="text" placeholder="Enter your username" required/>
+			<br>
+			<label>Passcode:</label>
+				<input type="password" placeholder="Enter or Create passcode" required/>
+			<br>
+			<label>Sport choices:</label>
+				<input type="checkbox" name="Sport choices" id="1" value="Cricket"/><label for="1">Cricket</label>
+				<input type="checkbox" name="Sport choices" id="2" value="Basketball"/><label for="2">Basketball</label>
+				<input type="checkbox" name="Sport choices" id="3" value="Football"/><label for="3">Football</label>
+				<input type="checkbox" name="Sport choices" id="4" value="Volleyball"/><label for="4">Volleyball</label>
+				<input type="checkbox" name="Sport choices" id="5" value="Hockey"/><label for="5">Hockey</label>
+			<br>
+			<label>Gender:</label>
+				<input type="radio" name="Gender" id="6" value="Female" checked/><label for="6">Female</label>
+				<input type="radio" name="Gender" id="7" value="Male"/><label for="7">Male</label>
+				<input type="radio" name="Gender" id="8" value="Trans"/><label for="8">Trans</label>
+			<br>
+			<input type="submit" value="Submit"/>
+			<input type="reset" value="Reset"/>
+</body>
+</html>

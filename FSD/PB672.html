@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>City
+            <input type="text" id="city">
+        </label>
+        <label>Country
+            <input type="text" id="country">
+        </label>
+        <br>
+        <input type="button" value="Save" onclick="fun1()">
+        <input type="button" value="Remove City" onclick="fun2()">
+    </form>
+    <h3 id="msg"></h3>
+    <script>
+        function fun1()
+        {
+            sessionStorage.setItem("Country",document.getElementById("country").value);
+            sessionStorage.setItem("City",document.getElementById("city").value);
+            document.getElementById("msg").innerHTML="Data added";
+
+        }
+        function fun2()
+        {
+            sessionStorage.removeItem("City");
+            document.getElementById("msg").innerHTML="City Removed";
+        }
+    </script>
+</body>
+</html>
